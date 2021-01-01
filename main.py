@@ -1,6 +1,6 @@
 import argparse
-from config_loader import config_loader
 from data.download_data import download_data
+from yuee_lib.config_loader import config_loader
 
 
 def main():
