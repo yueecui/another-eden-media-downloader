@@ -34,7 +34,7 @@ class AnotherEdenData:
         if type(manifest_info) == str:
             manifest_info = json.loads(manifest_info)
 
-        version_url = manifest_info['remoteVersionUrl']
+        version_url = manifest_info['remoteManifestUrl']
         response = get(version_url)
         if response is None:
             raise Exception(f'请求最初版本数据时失败！请检查')
